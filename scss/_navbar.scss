@@ -1,0 +1,26 @@
+.logo__imagen{
+    width: 15rem;
+    height: auto;
+
+    transition: all .5s ease;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.subrayado {
+	&::after {
+		content: "" ;
+		height: 0.3rem; 
+		width: 0 ;
+		background-color: $ColorPrimario;
+		display: block ;
+		transition: all 400ms ease; 
+    }
+	&:hover {
+		&::after {
+			width: 100%;
+            }
+        }
+    }

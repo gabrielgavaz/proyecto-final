@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3 {
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+.header {
+  border-bottom: 1px solid #ad2b00;
+}
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo__imagen {
+  width: 15rem;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.logo__imagen:hover {
+  transform: scale(1.1);
+}
+
+.subrayado::after {
+  content: "";
+  height: 0.3rem;
+  width: 0;
+  background-color: #ad2b00;
+  display: block;
+  transition: all 400ms ease;
+}
+.subrayado:hover::after {
+  width: 100%;
+}
+
+.img {
+  width: 10rem;
+}
+
+@media (min-width: 768px) {
+  .resize {
+    height: 80.4vh;
+  }
+}
+/* contenido main */
+.main-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+.main-flex .contenedor-texto h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.main-flex .contenedor-texto h4 {
+  font-style: oblique;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ad2b00;
+}
+.main-flex .contenedor-texto p {
+  font-size: 1.5rem;
+  text-indent: 1.3rem;
+  text-align: justify;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .main-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+  .contenedor-texto, .contenedor-imagen {
+    width: 45%;
+  }
+}
+/* testimonios */
+.section-banner h3 {
+  text-align: start;
+  padding-left: 1rem;
+}
+.section-banner .testimonio-flex {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.section-banner .contenedor-testimonio {
+  display: flex;
+  justify-content: start;
+  margin: 1rem 2.4rem 1rem 1rem;
+}
+.section-banner .contenedor-imagen-banner, .section-banner .contenedor-texto-testimonio {
+  margin: 1rem;
+}
+.section-banner .contenedor-texto-testimonio p {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.section-banner .contenedor-texto-testimonio .nombreDePersona {
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: end;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-banner {
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+  .section-banner .testimonio-flex {
+    flex-direction: row;
+    padding: 0 5rem 0 5rem;
+  }
+  .section-banner h3 {
+    font-size: 4rem;
+    margin: 2.4rem 0 1rem 0;
+    text-align: center;
+  }
+}
+/* BANNER */
+.contenedor-banner {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../images/banner2.png);
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-banner a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 4rem;
+  color: #fff;
+  background-color: #000;
+  border-radius: 1rem;
+  transition: 0.7s;
+  animation: shake 2s infinite;
+}
+.contenedor-banner a:hover {
+  color: #000;
+  background-color: #fff;
+}
+@keyframes shake {
+  10% {
+    transform: scale(1.1) rotate(2deg);
+  }
+  30% {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(2deg);
+  }
+  70% {
+    transform: scale(1.1) rotate(-2deg);
+  }
+}/*# sourceMappingURL=estilo.css.map */

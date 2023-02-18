@@ -1,0 +1,33 @@
+/* BANNER */
+
+.contenedor-banner{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../images/banner2.png);
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+        padding: 1rem;
+        font-size: 4rem;
+        color: $Blanco; 
+        background-color: $Negro;
+        border-radius: 1rem;
+        transition: .7s;
+
+        animation: shake 2s infinite;
+        &:hover{
+            color: $Negro;
+            background-color: $Blanco;
+        }
+        @keyframes shake{
+            10%{transform: scale(1.1) rotate(2deg);}
+            30%{transform: scale(1.1) rotate(-2deg);}
+            50%{transform: scale(1.1) rotate(2deg);}
+            70%{transform: scale(1.1) rotate(-2deg);}
+        }
+    }
+}
