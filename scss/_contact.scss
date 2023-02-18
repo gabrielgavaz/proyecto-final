@@ -1,0 +1,57 @@
+/* contacto */
+
+.main-flex-contacto{
+    margin: 3rem auto;
+    width: 95%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    .contenedor-datos{
+        display: flex;
+        flex-direction: column;
+        .auxiliar-flex{
+            display: flex;
+            justify-content: center;
+        .contenedor-datos-texto{
+            display: flex;
+            align-items: center;
+            column-gap: 3rem;
+            width: 23rem;
+            
+            .icono{
+                .imagen-icono{
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+            .informacion{
+                h2{
+                    text-align: left;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .main-flex-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        width: 70%;
+    }
+    .boton{
+        &:hover{
+            background-color: #762104;
+        }
+    }
+    
+}
+
+
+

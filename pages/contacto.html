@@ -54,60 +54,84 @@
             <p>contacto</p>
         </section>
 
+
+
+
         <main class="main-flex-contacto">
+
             <div class="contenedor-datos">
-                <div class="contenedor-datos-texto" >
-                    <h2>Telefono</h2>
-                    <p class="parrafo">3519999999</p>
+                <div class="auxiliar-flex">
+                    <div class="contenedor-datos-texto" >
+                        <div class="icono">
+                            <img class="imagen-icono" src="../images/telefono.png" alt="imagne-telefono">
+                        </div>
+                        <div class="informacion">
+                            <h2>Teléfono</h2>
+                            <p>+54 9 3519999999</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contenedor-datos-texto">
-                    <h2>Direccion</h2>
-                    <p class="parrafo">Ituzaingo 1012, Nueva Cordoba, Cordoba Capital</p>
+
+                <div class="auxiliar-flex">
+                    <div class="contenedor-datos-texto" >
+                        <div class="icono">
+                            <img class="imagen-icono" src="../images/ubicaion.png" alt="imagne-ubicacion">
+                        </div>
+                        <div class="informacion">
+                            <h2>Ubicación</h2>
+                            <p>Ituzaingo 1012, Nueva Cordoba, Cordoba.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contenedor-datos-texto">
-                    <h2>E-mail</h2>
-                    <p class="parrafo">email@actividad.com</p>
+
+                <div class="auxiliar-flex">
+                    <div class="contenedor-datos-texto" >
+                        <div class="icono">
+                            <img class="imagen-icono" src="../images/email.png" alt="imagne-email">
+                        </div>
+                        <div class="informacion">
+                            <h2>E-mail</h2>
+                            <p>Sundances@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <form class="formulario" action="#">
 
-                    <fieldset>
+            <div class="contenedor-formulario">
 
-                        <div class="contenedor-inputs">
+                <form class="form" action="#">
 
-                            <div class="inputs">
-                                <label for="">Nombre</label>
-                                <input class="inputs-text" type="text" placeholder="tu nombre">
+                        <div class="contenedor-campos">
+
+                            <div class="campos">
+                                <label for="nombre">Nombre</label>
+                                <input class="input" id="nombre" type="text" placeholder="Su nombre">
                             </div>
 
-                            <div class="inputs">
-                                <label for="">Telefono</label>
-                                <input class="inputs-text" type="tel" placeholder="tu telefono">
+                            <div class="campos">
+                                <label for="telefono">Telefono</label>
+                                <input class="input" id="telefono" type="number" placeholder="Su Telefono">
                             </div>
 
-                            <div class="inputs">
-                                <label for="">E-mail</label>
-                                <input class="inputs-text" type="email" placeholder="tu email">
+                            <div class="campos"> 
+                                <label for="email">Email</label>
+                                <input class="input" type="text" id="email" placeholder="Su correo electronico">
+                            </div>
+
+                            <div class="campos">
+                                <label  for="textarea">Mensaje</label>
+                                <textarea class="input" id="textarea" style="resize: none;" cols="20" rows="5"></textarea>
                             </div>
 
 
-                            <div class="inputs">
-                                <label for="">Mensaje</label>
-                                <textarea class="inputs-text height"></textarea>
-                            </div>
+                            <input class="boton" type="submit" value="ENVIAR">
 
                         </div>
-
-                        <div class="enviar">
-                            <input class="input-enviar" type="submit">
-                        </div>
-
-                    </fieldset>
+                        
 
                 </form>
-
             </div>
+
         </main>
 
 

@@ -1,0 +1,35 @@
+
+/* FORMULARIO */
+.contenedor-formulario{
+    .form{
+        .contenedor-campos{
+            padding: 2rem;
+            width: 90%;
+            margin: 2rem auto;
+            .campos{
+                margin-bottom: 2rem;
+                label{
+                    display: block;
+                    margin-bottom: .4rem;
+                    font-size: 2rem;
+                }
+                .input{
+                    width: 100%;
+                    border: 1px solid $ColorPrimario;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                }
+                
+            }
+            .boton{
+                width: 100%;
+                padding: .3rem;
+                border: none;
+                background-color: $ColorPrimario;
+                font-size: 1.5rem;
+                border-radius: .5rem;
+                color: $Blanco;
+            }
+        }
+    }
+}
