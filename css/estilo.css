@@ -1,3 +1,4 @@
+/* ESTILOS GLOBALES */
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +24,10 @@ h2 {
 
 h3 {
   font-size: 2.8rem;
+}
+
+.contenedor {
+  width: min(90%, 100rem);
 }
 
 .header {
@@ -54,6 +59,7 @@ h3 {
   width: 100%;
 }
 
+/* CARRUSEL */
 .img {
   width: 10rem;
 }
@@ -189,6 +195,7 @@ h3 {
   }
 }
 
+/* FOOTER */
 .footer {
   background-color: #000;
 }
@@ -273,6 +280,7 @@ h3 {
     cursor: pointer;
   }
 }
+/* BANNER CLASES */
 .contenedor-banner-clases {
   height: 20rem;
   width: 100%;
@@ -291,6 +299,7 @@ h3 {
   transition: 0.7s;
 }
 
+/* PAGINA CLASES */
 .container {
   width: 100%;
   display: grid;
@@ -377,7 +386,7 @@ h3 {
     color: #fff;
   }
 }
-/* contacto */
+/* CONTACTO */
 .main-flex-contacto {
   margin: 3rem auto;
   width: 95%;
@@ -450,5 +459,75 @@ h3 {
   background-color: #ad2b00;
   font-size: 1.5rem;
   border-radius: 0.5rem;
+  color: #fff;
+}
+
+.contenedor {
+  margin: 5rem auto;
+  border: none;
+}
+.contenedor .contenedor__flex {
+  display: inline-block;
+  width: 100%;
+  border: none;
+}
+.contenedor .contenedor__flex .dia {
+  margin-top: 2rem;
+}
+.contenedor .contenedor__flex .dia .dia__nombre p {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 0;
+}
+.contenedor .contenedor__flex .dia .dia__horario {
+  padding: 3rem;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.contenedor .contenedor__flex .dia .dia__horario p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+@media (min-width: 960px) {
+  .contenedor .contenedor__flex {
+    display: flex;
+  }
+  .contenedor .contenedor__flex .dia .dia__nombre p {
+    text-align: center;
+  }
+  .contenedor .contenedor__flex .dia .dia__horario {
+    height: 10rem;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .contenedor .contenedor__flex .dia .dia__horario p {
+    text-align: center;
+  }
+}
+.nene {
+  background-color: #532036;
+}
+
+.teen {
+  background-color: #703143;
+}
+
+.avanzado {
+  background-color: #9f4860;
+}
+
+.allage {
+  background-color: #de6e80;
+}
+
+.taller {
+  background-color: #f497a5;
+}
+
+.blanco {
   color: #fff;
 }/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,88 @@
+.contenedor{
+    margin: 5rem auto;
+    border: none;
+    .contenedor__flex{
+        display:inline-block;
+        width: 100%;
+        border: none;
+        .dia{
+            margin-top: 2rem;
+            .dia__nombre{
+                p{
+                    text-align: center;
+                    font-size: 1.7rem;
+                    margin: 0;
+                }
+            }
+            .dia__horario{
+                padding: 3rem;
+                border: 1px solid $Negro;
+                display: flex;
+                align-items: center;
+                column-gap: 3rem;
+                p{
+                    font-size: 1.4rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 960px) {
+    .contenedor{
+        .contenedor__flex{
+            display: flex;
+            .dia{
+                .dia__nombre{
+                    p{
+                        text-align: center;
+                    }
+                }
+                .dia__horario{
+                    height: 10rem;
+                    flex-direction: column;
+                    padding-top: 1rem;
+                    p{
+                        text-align: center;
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nene{
+    background-color: $NeneHorario ;
+}
+.teen{
+    background-color: $AdolescentesHorario;
+}
+.avanzado{
+    background-color: $AvanzadoHorario;
+}
+.allage{
+    background-color: $Allages;
+}
+.taller{
+    background-color: $taller;
+}
+.blanco{
+    color: $Blanco;
+}
+
+
+
+
+
+
+// .contenedor__flex{
+//     display: flex;
+// }
+// .dia{
+//     width: 100%;
+
+// }
+// .dia__horario{
+
+// }

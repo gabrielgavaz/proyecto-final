@@ -1,3 +1,4 @@
+/* ESTILOS GLOBALES */
 *{
     margin: 0;
     padding: 0;
@@ -21,4 +22,8 @@ h2{
 }
 h3{
     font-size: 2.8rem;
+}
+
+.contenedor{
+    width: min(90% , 100rem);
 }
