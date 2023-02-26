@@ -1,0 +1,103 @@
+
+.contenido-principal{
+    .blog{
+        .entrada{
+            border-bottom: 1px solid $Gris;
+            margin-bottom: 2rem;
+            &:last-of-type{
+                border: none;
+            }
+            .entrada_contenido{
+                p{
+                    font-size: 1.5rem;
+                }
+                .boton{
+                    display: block;
+                    font-family: $FuentePrincipal;
+                    color: $Blanco;
+                    text-align: center;
+                    padding: 1rem 3rem;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    margin-bottom: 2rem;
+                    border: none;
+                    text-decoration: none;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .boton--primario{
+                    background-color: $Negro;
+                }
+            }
+        }
+    }
+    .sidebar{
+        .cursos{
+            list-style: none;
+            .widget-curso{
+                border-bottom: 1px solid $Gris;
+                margin-bottom: 2rem;
+                &:last-of-type{
+                    border: none;
+                }
+                .widget-curso__label{
+                    font-weight: 700;
+                    font-family: $FuentePrincipal;
+                }
+                .widget-curso__info{
+                    font-weight: normal;
+                }
+                .widget-curso__info,
+                .widget-curso__label{
+                    font-size: 1.5rem;
+                }
+                .boton--secundario{
+                    background-color: $ColorPrimario;
+                }
+            }
+        }
+
+    }
+}
+.boton{
+    display: block;
+    font-family: $FuentePrincipal;
+    color: $Blanco;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border: none;
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
+}   
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+        .blog{
+            .entrada{
+                .entrada_contenido{
+                    .boton{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar{
+        .cursos{
+            .widget-curso{
+                .boton{
+                    display: inline-block;
+                }
+            }
+
+        }
+    }
+}

@@ -27,9 +27,14 @@ h3 {
 }
 
 .contenedor {
-  width: min(90%, 100rem);
+  width: min(90%, 120rem);
 }
 
+.img-w100 {
+  width: 100%;
+}
+
+/* HEADER */
 .header {
   border-bottom: 1px solid #ad2b00;
 }
@@ -69,7 +74,7 @@ h3 {
     height: 80.4vh;
   }
 }
-/* contenido main */
+/* PAGINA HOME */
 .main-flex {
   display: flex;
   align-items: center;
@@ -530,4 +535,88 @@ h3 {
 
 .blanco {
   color: #fff;
+}
+
+.contenido-principal .blog .entrada {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 2rem;
+}
+.contenido-principal .blog .entrada:last-of-type {
+  border: none;
+}
+.contenido-principal .blog .entrada .entrada_contenido p {
+  font-size: 1.5rem;
+}
+.contenido-principal .blog .entrada .entrada_contenido .boton {
+  display: block;
+  font-family: "Prompt", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  border: none;
+  text-decoration: none;
+}
+.contenido-principal .blog .entrada .entrada_contenido .boton:hover {
+  cursor: pointer;
+}
+.contenido-principal .blog .entrada .entrada_contenido .boton--primario {
+  background-color: #000;
+}
+.contenido-principal .sidebar .cursos {
+  list-style: none;
+}
+.contenido-principal .sidebar .cursos .widget-curso {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 2rem;
+}
+.contenido-principal .sidebar .cursos .widget-curso:last-of-type {
+  border: none;
+}
+.contenido-principal .sidebar .cursos .widget-curso .widget-curso__label {
+  font-weight: 700;
+  font-family: "Prompt", sans-serif;
+}
+.contenido-principal .sidebar .cursos .widget-curso .widget-curso__info {
+  font-weight: normal;
+}
+.contenido-principal .sidebar .cursos .widget-curso .widget-curso__info,
+.contenido-principal .sidebar .cursos .widget-curso .widget-curso__label {
+  font-size: 1.5rem;
+}
+.contenido-principal .sidebar .cursos .widget-curso .boton--secundario {
+  background-color: #ad2b00;
+}
+
+.boton {
+  display: block;
+  font-family: "Prompt", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  border: none;
+  text-decoration: none;
+}
+.boton:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+  .contenido-principal .blog .entrada .entrada_contenido .boton {
+    display: inline-block;
+  }
+  .sidebar .cursos .widget-curso .boton {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=estilo.css.map */
