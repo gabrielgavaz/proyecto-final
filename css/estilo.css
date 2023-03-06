@@ -406,7 +406,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 968px) {
   .container .cartas {
     display: flex;
     flex-direction: column;
