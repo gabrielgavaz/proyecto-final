@@ -50,11 +50,12 @@
 /* testimonios */
 
 .section-banner {
+	margin-top: 3rem;
 	h3 {
-		text-align: start ;
+		text-align: center ;
 		padding-left: 1rem ;
     }
-.testimonio-flex {
+	.testimonio-flex {
 	display: flex ;
 	margin: 0 auto ;
 	flex-direction: column ;
@@ -62,6 +63,7 @@
 .contenedor-testimonio {
 	display: flex ;
 	justify-content: start ;
+
 	margin: 1rem 2.4rem 1rem 1rem ;
 }
 .contenedor-imagen-banner, .contenedor-texto-testimonio {
@@ -87,14 +89,15 @@
     .section-banner{
         max-width: 110rem;
         margin: 0 auto;
+		h3{
+            font-size: 4rem;
+            margin: 2.4rem 0 1rem 0;
+
+        }
         .testimonio-flex{
             flex-direction: row;
             padding: 0 5rem 0 5rem;
         }
-        h3{
-            font-size: 4rem;
-            margin: 2.4rem 0 1rem 0;
-            text-align: center;
-        }
+        
     }
 }

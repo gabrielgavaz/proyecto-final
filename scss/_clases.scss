@@ -1,94 +1,185 @@
 /* PAGINA CLASES */
-.container {
-	width: 100% ;
-	display: grid ;
-	grid-template-rows: repeat(4, 1fr); 
-	margin: 0 auto ;
-	row-gap: 1rem ;
-	margin-top: 2rem ;
-    .card{
+.container{
+    width: 80%;
+    margin: 0 auto;
+    .cartas{
         width: 100%;
-        border-radius: .6rem;
-        overflow: hidden;
-        background-color: $Blanco;
-        cursor:default;
-        
-        img{
-            width: 100%;
-        }
-        .txt{
-            text-align: center;
-            padding: 1.5rem;
-            p{
-                line-height: 1.5;
-                color: $Negro;
-                font-size: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        justify-items:center;
+        align-items: center;
+
+        .carta{
+            width: 40rem;
+            height: auto;
+            border: 2px solid $ColorPrimario;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+            margin-top: 4rem;
+            transition: all 500ms ease;
+            &:hover{
+                transform: translateY(-1rem);
             }
-            h3{
-                font-weight: 400;
-                margin-bottom: 1.4rem;
+            .carta-imagen{
+                img{
+                    max-width: 100%;
+                    border-bottom: 3px solid $ColorPrimario;
+                }
             }
-            a{
-                text-decoration: none;
-                display: inline-block;
-                padding: 1rem;
-                margin-top: 1rem;
-                color: $ColorPrimario;
-                border: 1px solid $ColorPrimario;
-                text-align:justify;
-            }
-        }
+            .carta-texto{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    font-size: 4rem;
+                    margin-bottom: 0;
+                }
+                div{
+                    height: 10rem;
+                    min-width: 100%;
+                    p{
+                        text-align: justify;
+                        margin-bottom: 2rem;
+                        margin: 1rem;
+                        font-size: 1.5rem;
+                        display:  -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
     
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 970px) {
-    .container{
-        grid-template-columns: repeat(2 , 1fr);
-        grid-template-rows: repeat(2 , 1fr);
-        gap: 2rem;
-        .card{
-            transition: all 400ms ease;
-            &:hover{
-                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-                transform: translateY(-3%);
-            }
-            .txt{
-                a{
-                    border-radius: .4rem;
-                    transition: all .3s ease;
-                    &:hover{
-                        background-color: $ColorPrimario;
-                        color: $Blanco;
                     }
+                }
+
+                a{
+                    align-self: end;
+                    margin: 2rem;
+                    padding: 1rem;
+                    background-color: $ColorPrimario;
+                    color: $Blanco;
+                    border-radius: 2rem;
+                    text-decoration:none;
+                    font-size: 1.5rem;
                 }
             }
         }
     }
 }
-
-@media (min-width: 970px) {
+@media only screen and (max-width: 768px){
     .container{
-        grid-template-columns: repeat(4 , 1fr);
-        grid-template-rows:repeat(1, 1fr) ;
-        column-gap: 1.5rem ;
-        }
-        .card{
-            transition: all 400ms ease;
-            &:hover{
-                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-                transform: translateY(-2%);
-            }
-            .txt{
-                a{
-                    border-radius: .4rem;
-                    transition: all .3s ease;
-                    &:hover{
-                        background-color: $ColorPrimario;
-                        color: $Blanco;
-                    }
-                }
+        .cartas{
+            display: flex;
+            flex-direction: column;
+            .carta{
+                border-radius: 0;
             }
         }
-
+    }
+    
 }
+
+
+
+
+
+
+// .container {
+// 	width: 100% ;
+// 	display: grid ;
+// 	grid-template-rows: repeat(4, 1fr); 
+// 	margin: 0 auto ;
+// 	row-gap: 1rem ;
+// 	margin-top: 2rem ;
+//     .carta{
+//         width: 100%;
+//         border-radius: .6rem;
+//         overflow: hidden;
+//         background-color: $Blanco;
+//         cursor: pointer;
+//         border: 1px solid $Gris;
+        
+        
+//         img{
+//             width: 100%;
+//         }
+//         .txt{
+//             text-align: center;
+//             padding: 1.5rem;
+//             p{
+//                 line-height: 1.5;
+//                 color: $Negro;
+//                 font-size: 2rem;
+//             }
+//             h3{
+//                 font-weight: 400;
+//                 margin-bottom: 1.4rem;
+//             }
+//             a{
+//                 text-decoration: none;
+//                 display: inline-block;
+//                 padding: 1rem;
+//                 margin-top: 1rem;
+//                 color: $ColorPrimario;
+//                 border: 1px solid $ColorPrimario;
+//                 text-align:justify;
+//                 width: 100%;
+//                 text-align: center;
+//                 font-weight: 700;
+//                 letter-spacing: .1rem;
+//                 text-transform: uppercase;
+//             }
+//         }
+    
+//     }
+// }
+
+// @media only screen and (min-width: 576px) and (max-width: 970px) {
+//     .container{
+//         grid-template-columns: repeat(2 , 1fr);
+//         grid-template-rows: repeat(2 , 1fr);
+//         gap: 2rem;
+//         .carta{
+//             transition: all 400ms ease;
+//             &:hover{
+//                 box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+//                 transform: translateY(-3%);
+//             }
+//             .txt{
+//                 a{
+//                     border-radius: .4rem;
+//                     transition: all .3s ease;
+//                     &:hover{
+//                         background-color: $ColorPrimario;
+//                         color: $Blanco;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 970px) {
+//     .container{
+//         grid-template-columns: repeat(4 , 1fr);
+//         grid-template-rows:repeat(1, 1fr) ;
+//         column-gap: 1.5rem ;
+//         }
+//         .carta{
+//             transition: all 400ms ease;
+//             &:hover{
+//                 box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+//                 transform: translateY(-2%);
+//             }
+//             .txt{
+//                 a{
+//                     border-radius: .4rem;
+//                     transition: all .3s ease;
+//                     &:hover{
+//                         background-color: $ColorPrimario;
+//                         color: $Blanco;
+//                     }
+//                 }
+//             }
+//         }
+
+// }
